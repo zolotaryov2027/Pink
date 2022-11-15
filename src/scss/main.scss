@@ -1,0 +1,34 @@
+@import 'normalize';
+
+//Swiper
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+
+@import 'fonts';
+@import 'variables';
+@import 'settings';
+@import 'grid';
+
+
+
+
+
+// blocks
+@import 'blocks/burger';
+@import 'blocks/slogan';
+@import 'blocks/download';
+@import 'blocks/item-reviews';
+@import 'blocks/price-table';
+
+
+
+
+@import 'blocks/header';
+@import 'blocks/navigation';
+@import 'blocks/intro';
+@import 'blocks/information';
+@import 'blocks/round-diagram';
+@import 'blocks/reviews';
+@import 'blocks/price';
+

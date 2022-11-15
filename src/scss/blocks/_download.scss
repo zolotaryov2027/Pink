@@ -1,0 +1,49 @@
+.download{
+  background-color: $ebony-color;
+  @media (min-width: 768px){
+    background-color: transparent;
+  }
+  &__wrapper{
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: 768px){
+      margin: 0;
+      max-width: 300px;
+    }
+  }
+  &__button{
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-white;
+    background: none;
+    border: 3px solid $color-white;
+    border-radius: 29px;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  &__devices{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 31px;
+  }
+  &__device{
+    margin-right: 35px;
+    img{
+      display: block;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,9 @@
+.price{
+  background: $color-grey;
+  &__container{
+    padding: 0;
+    @media (min-width: 768px){
+      padding: 0 20px;
+    }
+  }
+}

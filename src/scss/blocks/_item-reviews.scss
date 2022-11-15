@@ -1,0 +1,56 @@
+.item-reviews{
+  padding: 50px 0;
+  text-align: center;
+  @media (min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 120px;
+  }
+  @media (min-width: 992px){
+    &::before{
+      content: '';
+      display: block;
+      width: 79px;
+      height: 63px;
+      background: url('../img/reviews/quotes.svg') center/cover no-repeat;
+      margin: 0 auto 58px;
+      order: -1;
+    }
+  }
+  
+  &__title{
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-black;
+    @media (min-width: 768px){
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    @media (min-width: 992px){
+      font-size: 24px;
+    }
+  }
+  &__info{
+    display: none;
+    @media (min-width: 768px){
+      display: block;
+    }
+  }
+  &__text{
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+    @media (min-width: 768px){
+      font-size: 18px;
+      order: -1;
+      margin-bottom: 30px;
+    }
+    @media (min-width: 992px){
+      max-width: 680px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+}

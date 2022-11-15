@@ -1,0 +1,64 @@
+.round-diagram{
+  display: none;
+  @media (min-width: 768px){
+    display: block;
+    &__wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 53px;
+      &::before{
+        content: '';
+        display: block;
+        width: 238px;
+        height: 276px;
+        background: url('../img/round-diagram/timer.svg') center no-repeat;
+        margin-right: 72px;
+        @media (min-width: 992px){
+          width: 298px;
+          height: 345px;
+          margin-right: 70px;
+        }
+      }
+      @media (min-width: 992px){
+        justify-content: flex-start;
+      }
+    }
+    &__content{
+      max-width: 310px;
+      padding: 0 5px;
+      @media (min-width: 992px){
+        max-width: 535px;
+      }
+    }
+    &__title{
+      margin: 0;
+      font-size: 30px;
+      line-height: 36px;
+      color: $color-black;
+      @media (min-width: 992px){
+        font-size: 30px;
+        br{
+          display: none;
+        }
+      }
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 24px;
+      @media (min-width: 992px){
+        font-size: 18px;
+      }
+    }
+    &__link{
+      font-size: 14px;
+      color: $color-pink;
+      @media (min-width: 992px){
+        font-size: 18px;
+      }
+    }
+  }
+  @media (min-width: 992px){
+    background-color: $color-grey;
+  }
+}

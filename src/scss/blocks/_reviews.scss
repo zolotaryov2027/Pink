@@ -1,0 +1,65 @@
+.reviews{
+  position: relative;
+  &__arrow{
+    width: 22px;
+    height: 41px;
+    color: transparent !important;
+    display: none;
+    @media (min-width: 992px){
+      display: block;
+    }
+    &--prev{
+      background: url('../img/reviews/left-arrow.svg') center/cover no-repeat;
+    }
+    &--next{
+      background: url('../img/reviews/right-arrow.svg') center/cover no-repeat;
+    }
+  }
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to top left, #f2f2f2 50%, rgba(255, 0, 0, 0) 51%);
+    @media (min-width: 768px){
+      height: 50px;
+    }
+  }
+}
+
+
+
+
+.swiper{
+  min-height: 364px;
+}
+
+
+
+.swiper-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px !important;
+  @media (min-width: 768px){
+    bottom: 60px !important;
+  }
+  @media (min-width: 992px){
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet{
+  width: 6px;
+  height: 6px;
+  margin: 0 8px !important;
+  &-active{
+    width: 12px;
+    height: 12px;
+    background: $color-white;
+    border: 3px solid $ebony-color;
+  }
+}

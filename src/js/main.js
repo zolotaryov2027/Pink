@@ -80,5 +80,5 @@ for(let elem of paginationPriceItems){
 
 
 
-console.log()
+
 

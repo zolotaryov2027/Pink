@@ -1,13 +1,3 @@
-// import Swiper, { Navigation, Pagination } from 'swiper';
-
-
-// // init Swiper:
-// const swiper = new Swiper('.swiper', {
-//   // configure Swiper to use modules
-//   modules: [Navigation, Pagination],
-  
-// });
-
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 const swiper1 = new Swiper('.swiper', {

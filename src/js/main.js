@@ -65,6 +65,7 @@ burger.addEventListener('click', function(){
 
 const paginationPriceItems = document.querySelectorAll('.price-paginations__radio');
 const priceTabel = document.querySelector('.price-tabel');
+const priceTableHeader = document.querySelectorAll('.price-table__header');
 
 
 for(let elem of paginationPriceItems){
@@ -73,30 +74,21 @@ for(let elem of paginationPriceItems){
       elem.classList.remove('price-paginations__radio--active');
       this.classList.add('price-paginations__radio--active');
     }
+
     if(this === paginationPriceItems[0]){
       priceTabel.style.left = 0 + 'px';
     }
     else if(this === paginationPriceItems[1]){
-      priceTabel.style.left = -276 + 'px';
+      priceTabel.style.left = -priceTableHeader[1].offsetWidth + 'px';
     }
     else if(this === paginationPriceItems[2]){
-      priceTabel.style.left = -550 + 'px';
+      priceTabel.style.left = -(priceTableHeader[1].offsetWidth * 2) + 'px';
     }
   })
 }
 
 
 
-if(paginationPriceItems[0].classList.contains('price-paginations__radio--active')){
-  priceTabel.style.left = 0 + 'px';
-}
 
+console.log()
 
-// if(paginationPriceItems[1].classList.contains('price-paginations__radio--active')){
-//   priceTabel.style.left = -276 + 'px';
-// }
-
-
-// if(paginationPriceItems[2].classList.contains('price-paginations__radio--active')){
-//   priceTabel.style.right = 0 + 'px';
-// }

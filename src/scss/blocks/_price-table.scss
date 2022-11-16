@@ -15,6 +15,9 @@
 }
 
 .price-tabel{
+  position: relative;
+  left: 0;
+  transition: left .3s ease-in-out;
   @media (min-width:768px){
     width: 100%;
   }

@@ -61,3 +61,42 @@ burger.addEventListener('click', function(){
   this.classList.toggle('burger--active');
   navigation.classList.toggle('navigation__list--active');
 })
+
+
+const paginationPriceItems = document.querySelectorAll('.price-paginations__radio');
+const priceTabel = document.querySelector('.price-tabel');
+
+
+for(let elem of paginationPriceItems){
+  elem.addEventListener('click', function(){
+    for(let elem of paginationPriceItems){
+      elem.classList.remove('price-paginations__radio--active');
+      this.classList.add('price-paginations__radio--active');
+    }
+    if(this === paginationPriceItems[0]){
+      priceTabel.style.left = 0 + 'px';
+    }
+    else if(this === paginationPriceItems[1]){
+      priceTabel.style.left = -276 + 'px';
+    }
+    else if(this === paginationPriceItems[2]){
+      priceTabel.style.left = -550 + 'px';
+    }
+  })
+}
+
+
+
+if(paginationPriceItems[0].classList.contains('price-paginations__radio--active')){
+  priceTabel.style.left = 0 + 'px';
+}
+
+
+// if(paginationPriceItems[1].classList.contains('price-paginations__radio--active')){
+//   priceTabel.style.left = -276 + 'px';
+// }
+
+
+// if(paginationPriceItems[2].classList.contains('price-paginations__radio--active')){
+//   priceTabel.style.right = 0 + 'px';
+// }

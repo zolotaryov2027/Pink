@@ -17,10 +17,12 @@
 .price-tabel{
   position: relative;
   left: 0;
+  transform: translateX(20px);
   transition: left .3s ease-in-out;
   @media (min-width:768px){
     position: static;
     width: 100%;
+    transform: translateX(0);
   }
   .price-table__header{
     min-width: 276px;

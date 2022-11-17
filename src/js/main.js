@@ -148,8 +148,8 @@ const handleTouchMove = (event) => {
   y1 = null;
 }
 
-document.addEventListener('touchstart', handleTouchStart, false);
-document.addEventListener('touchmove', handleTouchMove, false);
+priceTabel.addEventListener('touchstart', handleTouchStart, false);
+priceTabel.addEventListener('touchmove', handleTouchMove, false);
 
 
 function checkPaginationActive(paginationItem){

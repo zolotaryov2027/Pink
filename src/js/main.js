@@ -57,6 +57,17 @@ const paginationPriceItems = document.querySelectorAll('.price-paginations__radi
 const priceTabel = document.querySelector('.price-tabel');
 const priceTableHeader = document.querySelectorAll('.price-table__header');
 
+function checkPaginationActive(paginationItem){
+  for(let i = 0; i < paginationItem.length; i++){
+    if(paginationItem[0].classList.contains('price-paginations__radio--active')){
+      priceTabel.style.left = 0 + 'px';
+    }else if(paginationItem[1].classList.contains('price-paginations__radio--active')){
+      priceTabel.style.left = -priceTableHeader[1].offsetWidth + 'px';
+    }else if(paginationItem[2].classList.contains('price-paginations__radio--active')){
+      priceTabel.style.left = -(priceTableHeader[1].offsetWidth * 2) + 'px';
+    }
+  }
+}
 
 for(let elem of paginationPriceItems){
   elem.addEventListener('click', function(){
@@ -143,14 +154,3 @@ priceTabel.addEventListener('touchstart', handleTouchStart, false);
 priceTabel.addEventListener('touchmove', handleTouchMove, false);
 
 
-function checkPaginationActive(paginationItem){
-  for(let i = 0; i < paginationItem.length; i++){
-    if(paginationItem[0].classList.contains('price-paginations__radio--active')){
-      priceTabel.style.left = 0 + 'px';
-    }else if(paginationItem[1].classList.contains('price-paginations__radio--active')){
-      priceTabel.style.left = -priceTableHeader[1].offsetWidth + 'px';
-    }else if(paginationItem[2].classList.contains('price-paginations__radio--active')){
-      priceTabel.style.left = -(priceTableHeader[1].offsetWidth * 2) + 'px';
-    }
-  }
-}

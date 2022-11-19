@@ -154,3 +154,36 @@ priceTabel.addEventListener('touchstart', handleTouchStart, false);
 priceTabel.addEventListener('touchmove', handleTouchMove, false);
 
 
+// Map
+
+let center = [59.938635, 30.323118]
+
+function init() {
+  let map = new ymaps.Map('map', {
+    center: center,
+    zoom: 17,
+    // behaviors: 'drag'
+  });
+
+
+  let placemark = new ymaps.Placemark(center, {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/contacts/map-marker.svg',
+    iconImageSize: [36, 36],
+    iconImageOffset: [0, 0]
+  });
+
+  map.controls.remove('geolocationControl'); //Удаляем геолокацию
+  map.controls.remove('searchControl'); //Удаляем поиск
+  map.controls.remove('trafficControl'); //Удаляем контроль трафика
+  map.controls.remove('typeSelector'); //Удаляем тип
+  map.controls.remove('fullscreenControl'); //Удаляем кнопку перехода в полноэкранный режим
+  map.controls.remove('zoomControl'); //Удаляем контрол зуммирования
+  map.controls.remove('rulerControl'); //Удаляем контрол правил
+  map.behaviors.disable('scrollZoom'); //Отключаем скролл карты (опционально)
+
+  map.geoObjects.add(placemark);
+}
+
+
+ymaps.ready(init);

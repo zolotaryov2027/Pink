@@ -1,0 +1,30 @@
+.footer{
+  padding: 40px 0;
+  text-align: center;
+  &__logo{
+    display: block;
+    margin-bottom: 40px;
+  }
+  &__social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+.social{
+  &__item{
+    margin: 0 7px;
+  }
+}
+
+
+.social__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 3px solid transparentize($ebony-color, 0.7);
+  border-radius: 50%;
+}

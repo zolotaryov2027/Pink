@@ -18,8 +18,29 @@
   &__logo{
     position: relative;
     z-index: 3;
-    img{
-      display: block;
+    display: block;
+    width: 74px;
+    height: 23px;
+    background: url('../img/header/logo-pink-white-mobile.svg') center/cover no-repeat;
+    @media (min-width: 768px){
+      width: 145px;
+      height: 40px;
+      background-image: url('../img/header/logo-pink-white-tablet.svg');
+    }
+    @media (min-width: 992px){
+      width: 147px;
+      background-image: url('../img/header/logo-pink-white-desktop.svg');
+      transition: background-image .1s ease-in-out;
+      &:hover{
+        background-image: url('../img/header/logo-hover-desktop.svg');
+        transition: background-image .1s linear;
+      }
+      &:active{
+        background-image: url('../img/header/logo-pink-white-desktop.svg');
+        opacity: .3;
+      }
     }
   }
 }
+
+

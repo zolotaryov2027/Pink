@@ -144,7 +144,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: transparentize($ebony-color, 0.3);
+  background-color: transparentize($ebony-color, 0.7);
   margin: 0 10px;
   &--active{
     width: 12px;

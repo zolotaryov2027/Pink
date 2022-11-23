@@ -47,6 +47,16 @@
     line-height: 33px;
     text-decoration: none;
     color: $color-pink;
+    transition: color .1s ease-in-out, opacity .1s ease-in-out, text-decoration .1s ease-in-out;
+    &:hover,
+    &:focus{
+      color: $ebony-color;
+      text-decoration: underline;
+    }
+    &:active{
+      text-decoration: none;
+      opacity: .3;
+    }
   }
 }
 

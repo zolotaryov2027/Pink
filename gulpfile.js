@@ -24,7 +24,7 @@ import sync from 'browser-sync';
 
 const paths =  {
   html: {
-    src: 'src/index.html',
+    src: 'src/**/*.html',
     dest: 'dist/'
   },
   styles: {
@@ -44,7 +44,7 @@ const paths =  {
     dest: 'dist/fonts/'
   },
   svg: {
-    src: 'src/img/icons/**/*.svg',
+    src: 'src/img/svgSprites/**/*.svg',
     dest: 'dist/img/'
   },
 }

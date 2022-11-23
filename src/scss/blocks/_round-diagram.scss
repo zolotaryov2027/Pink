@@ -55,6 +55,14 @@
       color: $color-pink;
       @media (min-width: 992px){
         font-size: 18px;
+        transition: color .1s ease-in-out;
+        &:hover{
+          color: $ebony-color;
+        }
+        &:active{
+          text-decoration: none;
+          opacity: .3;
+        }
       }
     }
   }

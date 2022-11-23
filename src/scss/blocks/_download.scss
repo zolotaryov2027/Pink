@@ -24,6 +24,16 @@
     max-width: 300px;
     margin-bottom: 30px;
     cursor: pointer;
+    @media (min-width: 992px){
+      transition: background-color .1s ease-in-out, color .1s ease-in-out;
+      &:hover{
+        background-color: $color-white;
+        color: $color-pink;
+      }
+      &:active{
+        color: transparentize($color-pink, 0.3);
+      }
+    }
   }
   &__devices{
     display: flex;

@@ -58,13 +58,15 @@
           position: absolute;
           transition: background-color .1s ease-in-out, opacity .1s ease-in-out;
         }
-        &:hover{
+        &:hover,
+        &:focus{
           &::after{
             background-color: $color-pink;
           }
         }
       }
-      &:hover{
+      &:hover,
+      &:focus{
         color: $color-pink;
       }
       &:active{

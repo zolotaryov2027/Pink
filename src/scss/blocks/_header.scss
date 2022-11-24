@@ -31,7 +31,8 @@
       width: 147px;
       background-image: url('../img/header/logo-pink-white-desktop.svg');
       transition: background-image .1s ease-in-out;
-      &:hover{
+      &:hover,
+      &:focus{
         background-image: url('../img/header/logo-hover-desktop.svg');
         transition: background-image .1s linear;
       }

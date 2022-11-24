@@ -6,12 +6,14 @@
   background-size: 286px auto,  auto 525px; 
   background-position: left 50% top 181px, center -10%;
   padding-top: 94px;
-  @media (min-resolution: 1.5dppx){
-    background-image: url('../img/intro/iphone-hand-mobile@2x.png'), url('../img/intro/bg-back-tablet@2x.jpg');
+  @media (max-width: 767px){
+    @media (min-resolution: 1.5dppx){
+      background-image: url('../img/intro/iphone-hand-mobile@2x.png'), url('../img/intro/bg-back-tablet@2x.jpg');
+    }
   }
   @media (min-width: 768px){
     background-image: url('../img/intro/iphone-hand-tablet@1x.png'), url('../img/intro/bg-back-tablet@1x.jpg');
-    background-size: auto 600px, cover;
+    background-size: auto 544px, cover;
     background-position: left 80% bottom, center center;
     padding-top: 212px;
     min-height: 730px;
@@ -56,6 +58,51 @@
       max-width: 300px;
       br{
         display: block;
+      }
+    }
+  }
+}
+
+
+.form-page{
+  .intro{
+    min-height: 238px;
+    padding-top: 104px;
+    padding-bottom: 20px;
+    background-image: url('../img/intro/bg-back-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 525px; 
+    background-position: center top;
+    @media (max-width: 767px){
+      @media (min-resolution: 1.5dppx){
+        background-image: url('../img/intro/bg-back-tablet@2x.jpg');
+      }
+    }
+    @media (min-width: 768px){
+      background-image: url('../img/intro/bg-back-tablet@1x.jpg');
+      background-size: cover;
+      background-position: center top;
+      min-height: 440px;
+      padding-top: 191px;
+      @media (min-resolution: 1.5dppx){
+        background-image: url('../img/intro/bg-back-tablet@1x.jpg');
+      }
+    }
+    @media (min-width: 992px){
+      min-height: 394px;
+      padding-top: 184px;
+      background-image: url('../img/intro/bg-back-desktop@1x.jpg');
+      background-position: center top;
+      background-size: 215%;
+      @media (min-resolution: 1.5dppx){
+        background-image: url('../img/intro/bg-back-desktop@2x.jpg');
+      }
+    }
+    &__slogan{
+      max-width: 410px;
+      margin: 0 auto;
+      @media (min-width: 992px){
+        max-width: 747px;
       }
     }
   }

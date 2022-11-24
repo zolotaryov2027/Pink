@@ -28,13 +28,28 @@
   &__strip{
     top: 50%;
     transform: translateY(-50%);
+    transition: background-color .1s ease-in-out;
   }
   &::before{
     top: 0;
+    transition: background-color .1s ease-in-out;
   }
   &::after{
     bottom: 0;
+    transition: background-color .1s ease-in-out;
   }
+  &:hover &__strip,
+  &:hover.burger::before,
+  &:hover.burger::after{
+    background-color: $color-pink;
+  }
+
+  &:focus &__strip,
+  &:focus.burger::before,
+  &:focus.burger::after{
+    background-color: $color-pink;
+  }
+
 }
 
 .burger--active{

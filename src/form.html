@@ -33,12 +33,140 @@
       </nav>
     </div>
   </header>
-  <section class="intro">
-    <h2 class="visually-hidden">Приветственный экран Pink</h2>
-    <div class="container intro__container">
-      <h2 class="slogan intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</h2>
+  <main class="main-content">
+    <section class="intro">
+      <h2 class="visually-hidden">Приветственный экран Pink</h2>
+      <div class="container intro__container">
+        <h2 class="slogan intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
+    </section>
+    <section class="form-contest">
+      <h2 class="visually-hidden">Форма конкурса</h2>
+      <div class="container"> 
+        <h2 class="form-contest__slogan">
+          Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000 
+          миль на вашу бонусную карту!
+        </h2>
     </div>
-  </section>
+        <form action="#" class="form">
+          <fieldset class="form__section section-form user-form">
+            <div class="container">
+              <label class="section-form__label user-form__label">
+                ФАМИЛИЯ:
+                <input type="text" name="user-surname" placeholder="Укажите фамилию *" class="section-form__field">
+              </label>
+              <label class="section-form__label user-form__label">
+                ИМЯ:
+                <input type="text" name="user-name" placeholder="Введите ваше имя *" class="section-form__field">
+              </label>
+              <label class="section-form__label user-form__label">
+                ОТЧЕСТВО:
+                <input type="text" name="user-patronymic" placeholder="Ну и отчество тоже" class="section-form__field">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__section section-form achievements-form">
+           <div class="container">
+            <legend class="section-form__title">Ваши безбашенные достижения в путешествии</legend>
+            <label class="section-form__label">
+              Сделал селфи с акулой
+              <input type="checkbox" name="shark" class="visually-hidden">
+            </label>
+            <label class="section-form__label">
+              Обгорел на пляже
+              <input type="checkbox" name="beach" class="visually-hidden">
+            </label>
+            <label class="section-form__label">
+              Видел Чака Норриса
+              <input type="checkbox" name="сhuck-norris" class="visually-hidden">
+            </label>
+            <label class="section-form__label">
+              Накупил сувениров
+              <input type="checkbox" name="souvenirs" class="visually-hidden">
+            </label>
+            <label class="section-form__label">
+              Удержал башню
+              <input type="checkbox" name="tower" class="visually-hidden">
+            </label>
+            <label class="section-form__label">
+              Разгромил отель
+              <input type="checkbox" name="hotel" class="visually-hidden">
+            </label>
+           </div>
+          </fieldset>
+          <fieldset class="form__section section-form contacts-form">
+            <div class="container">
+              <label class="section-form__label contacts-form__label">
+                НОМЕР ТЕЛЕФОНА
+                <input type="tel" name="telephone" placeholder="Номер, пожалуйста" class="section-form__field">
+              </label>
+              <label class="section-form__label contacts-form__label">
+                АДРЕС ПОЧТЫ
+                <input type="email" name="user-name" placeholder="Введите почту *" class="section-form__field">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__section section-form">
+            <div class="container">
+              <legend class="section-form__title">С каким приложением путешествовали?</legend>
+              <label class="section-form__label">
+                Pink для iOS
+                <input type="radio" name="pink-device" class="section-form__radio">
+              </label>
+              <label class="section-form__label">
+                Pink на Android
+                <input type="radio" name="pink-device" class="section-form__radio">
+              </label>
+              <label class="section-form__label">
+                Windows Phone
+                <input type="radio" name="pink-device" class="section-form__radio">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__section section-form">
+            <div class="container">
+              <legend class="section-form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <textarea name="emotions" class="section-form__textarea" placeholder="Можно прям в красках, не
+              стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
+          <div class="container">
+            <button class="form__button" type="submit">Отправить форму</button>
+          </div>
+        </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="#" class="footer__logo">
+        
+      </a>
+      <ul class="list-reset social footer__social">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="img/footer/twitter.svg" alt="Twitter" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="img/footer/facebook.svg" alt="Facebook" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="img/footer/youtube.svg" alt="Youtube" class="social__icon">
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <svg class="copyright__img" width="27" height="34">
+          <use xlink:href="img/icons/sprite.svg#html-academy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
  </div>
 </body>
 </html>

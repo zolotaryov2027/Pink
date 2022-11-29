@@ -1,0 +1,43 @@
+.section-form{
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+  border: none;
+}
+
+.section-form__title,
+.user-form__label,
+.contacts-form__label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-pink;
+}
+
+.achievements-form{
+  background-color: $color-grey;
+}
+
+.section-form__title{
+  text-align: center;
+}
+
+.section-form__label{
+  display: block;
+}
+
+
+.section-form__field{
+  display: block;
+  width: 100%;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  padding: 15px 20px;
+}
+
+
+.section-form__field::placeholder{
+  font-size: 18px;
+  color: $color-text;
+}

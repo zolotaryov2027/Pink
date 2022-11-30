@@ -49,6 +49,7 @@
 
 .copyright__img{
   fill: $color-pink;
+  transition: fill .1s ease-in-out;
 }
 
 .copyright{
@@ -57,7 +58,6 @@
   transition: fill .1s ease-in-out;
   &:hover &__img{
     fill: $ebony-color;
-    transition: fill .1s ease-in-out;
   }
   &:active &__img{
     opacity: .3;

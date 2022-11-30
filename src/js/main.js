@@ -168,7 +168,7 @@ function init() {
 
   let placemark = new ymaps.Placemark(center, {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/contacts/map-marker.svg',
+    iconImageHref: 'img/contacts/map-marker.svg',
     iconImageSize: [36, 36],
     iconImageOffset: [0, 0]
   });

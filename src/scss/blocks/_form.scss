@@ -1,90 +1,12 @@
-.section-form{
-  margin: 0;
-  margin-bottom: 44px;
-  padding: 0;
-  border: none;
+.form{
+  font-size: 18px;
 }
 
-.section-form__title,
-.user-form__label,
-.contacts-form__label{
+
+.label-field,.form-title{
   font-weight: 400;
   font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
+  line-height: 18px;
   color: $color-pink;
-}
-
-
-.section-form__label-title{
-  margin: 0;
-  font-weight: 400;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-.user-form__label{
-  margin-bottom: 25px;
-}
-
-.user-form__label:last-child{
-  margin: 0;
-}
-
-
-
-.section-form__title{
-  text-align: center;
-}
-
-.section-form__label{
-  display: block;
-}
-
-
-.section-form__field{
-  display: block;
-  width: 100%;
-  border: 2px solid #E5E5E5;
-  border-radius: 1px;
-  padding: 15px 20px;
-}
-
-
-.section-form__field::placeholder{
-  font-size: 18px;
-  color: $color-text;
-}
-
-
-
-.achievements-form{
-  background-color: $color-grey;
-  padding: 42px 0 44px;
-  &__wrapper{
-    margin-bottom: 47px;
-  }
-  &__title{
-    margin-bottom: 44px;
-  }
-  &__label{
-    display: flex;
-    align-items: center;
-  }
-  &__label::before{
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    background-color: $color-white;
-    border: 2px solid $color-grey;
-    border-radius: 1px;
-    margin-right: 22px;
-  }
-}
-
-.achievements-form__checkbox:checked + .achievements-form__label::before{
-  background-image: url('../img/icons/checkbox.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  text-transform: uppercase;
 }

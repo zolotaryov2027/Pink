@@ -48,103 +48,92 @@
           шанс выиграть ценный приз — 1000 
           миль на вашу бонусную карту!
         </h2>
-    </div>
+      </div>
         <form action="#" class="form">
-          <fieldset class="form__section section-form user-form">
-            <div class="container">
-              <label class="section-form__label user-form__label">
-                <h3 class="section-form__label-title">ФАМИЛИЯ:</h3>
-                <input type="text" name="user-surname" placeholder="Укажите фамилию *" class="section-form__field">
-              </label>
-              <label class="section-form__label user-form__label">
-                <h3 class="section-form__label-title">ИМЯ:</h3>
-                <input type="text" name="user-name" placeholder="Введите ваше имя *" class="section-form__field">
-              </label>
-              <label class="section-form__label user-form__label">
-                <h3 class="section-form__label-title">ОТЧЕСТВО:</h3>
-                <input type="text" name="user-patronymic" placeholder="Ну и отчество тоже" class="section-form__field">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__section section-form achievements-form">
-           <div class="container">
-            <legend class="section-form__title achievements-form__title">Ваши безбашенные достижения в путешествии</legend>
-            <p class="achievements-form__wrapper">
-              <input type="checkbox" name="shark" class="visually-hidden achievements-form__checkbox" id="achievements-checkbox_1">
-              <label class="section-form__label achievements-form__label" for="achievements-checkbox_1">
-                Сделал селфи с акулой
-              </label>
-            </p>
-            <p class="achievements-form__wrapper">
-              <input type="checkbox" name="shark" class="visually-hidden achievements-form__checkbox" id="achievements-checkbox_2">
-              <label class="section-form__label achievements-form__label" for="achievements-checkbox_2">
-                Обгорел на пляже
-              </label>
-            </p>
-            <p class="achievements-form__wrapper">
-              <input type="checkbox" name="shark" class="visually-hidden achievements-form__checkbox" id="achievements-checkbox_3">
-              <label class="section-form__label achievements-form__label" for="achievements-checkbox_3">
-                Видел Чака Норриса
-              </label>
-            </p>
-            <p class="achievements-form__wrapper">
-              <input type="checkbox" name="shark" class="visually-hidden achievements-form__checkbox" id="achievements-checkbox_4">
-              <label class="section-form__label achievements-form__label" for="achievements-checkbox_4">
-                Накупил сувениров
-              </label>
-            </p>
-            <p class="achievements-form__wrapper">
-              <input type="checkbox" name="shark" class="visually-hidden achievements-form__checkbox" id="achievements-checkbox_5">
-              <label class="section-form__label achievements-form__label" for="achievements-checkbox_5">
-                Удержал башню
-              </label>
-            </p>
-            <p class="achievements-form__wrapper">
-              <input type="checkbox" name="shark" class="visually-hidden achievements-form__checkbox" id="achievements-checkbox_6">
-              <label class="section-form__label achievements-form__label" for="achievements-checkbox_6">
-                Разгромил отель
-              </label>
-            </p>
-           </div>
-          </fieldset>
-          <fieldset class="form__section section-form contacts-form">
-            <div class="container">
-              <label class="section-form__label contacts-form__label">
-                НОМЕР ТЕЛЕФОНА
-                <input type="tel" name="telephone" placeholder="Номер, пожалуйста" class="section-form__field">
-              </label>
-              <label class="section-form__label contacts-form__label">
-                АДРЕС ПОЧТЫ
-                <input type="email" name="user-name" placeholder="Введите почту *" class="section-form__field">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__section section-form">
-            <div class="container">
-              <legend class="section-form__title">С каким приложением путешествовали?</legend>
-              <label class="section-form__label">
-                Pink для iOS
-                <input type="radio" name="pink-device" class="section-form__radio">
-              </label>
-              <label class="section-form__label">
-                Pink на Android
-                <input type="radio" name="pink-device" class="section-form__radio">
-              </label>
-              <label class="section-form__label">
-                Windows Phone
-                <input type="radio" name="pink-device" class="section-form__radio">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__section section-form">
-            <div class="container">
-              <legend class="section-form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-              <textarea name="emotions" class="section-form__textarea" placeholder="Можно прям в красках, не
-              стесняясь в выражениях"></textarea>
-            </div>
-          </fieldset>
           <div class="container">
-            <button class="form__button" type="submit">Отправить форму</button>
+            <fieldset class="form__section user-form">
+              <div class="user-form__wrapper">
+                <label for="user-form__surname" class="label-field">ФАМИЛИЯ:</label>
+                <input type="text" class="field-form" id="user-form__surname" placeholder="Укажите фамилию *">
+              </div>
+              <div class="user-form__wrapper">
+                <label for="user-form__name" class="label-field">ИМЯ:</label>
+                <input type="text" class="field-form" id="user-form__name" placeholder="Введите ваше имя *">
+              </div>
+              <div class="user-form__wrapper">
+                <label for="user-form__patronymic" class="label-field">ОТЧЕСТВО:</label>
+                <input type="text" class="field-form" id="user-form__patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__wrapper">
+            <div class="container">
+              <fieldset class="form__section achievements-form">
+                <h3 class="form-title">Ваши безбашенные достижения в путешествии</h3>
+                <div class="achievements-form__wrapper">
+                  <input type="checkbox" name="shark" id="checkbox-1" class="achievements-form__checkbox">
+                  <label for="checkbox-1" class="label-checkbox">Сделал селфи с акулой</label>
+                </div>
+                <div class="achievements-form__wrapper">
+                  <input type="checkbox" name="burned" id="checkbox-2" class="achievements-form__checkbox">
+                  <label for="checkbox-2" class="label-checkbox">Обгорел на пляже</label>
+                </div>
+                <div class="achievements-form__wrapper">
+                  <input type="checkbox" name="chuck-norris" id="checkbox-3" class="achievements-form__checkbox">
+                  <label for="checkbox-3" class="label-checkbox">Видел Чака Норриса</label>
+                </div>
+                <div class="achievements-form__wrapper">
+                  <input type="checkbox" name="souvenirs" id="checkbox-4" class="achievements-form__checkbox">
+                  <label for="checkbox-4" class="label-checkbox">Накупил сувениров</label>
+                </div>
+                <div class="achievements-form__wrapper">
+                  <input type="checkbox" name="tower" id="checkbox-5" class="achievements-form__checkbox">
+                  <label for="checkbox-5" class="label-checkbox">Удержал башню</label>
+                </div>
+                <div class="achievements-form__wrapper">
+                  <input type="checkbox" name="hotel" id="checkbox-6" class="achievements-form__checkbox">
+                  <label for="checkbox-6" class="label-checkbox">Разгромил отель</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="container">
+            <fieldset class="form__section contacts-form">
+              <div class="contacts-form__wrapper">
+                <label for="contacts-form__telephone" class="label-field">НОМЕР ТЕЛЕФОНА</label>
+                <input type="text" class="field-form" id="contacts-form__telephone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="contacts-form__wrapper">
+                <label for="contacts-form__email" class="label-field">АДРЕС ПОЧТЫ</label>
+                <input type="text" class="field-form" id="contacts-form__email" placeholder="Введите почту *">
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__wrapper">
+            <div class="container">
+              <fieldset class="form__section journeys-form">
+                <h3 class="form-title">С каким приложением путешествовали?</h3>
+                <div class="journeys-form__wrapper">
+                  <input type="radio" name="device" id="radio-1" class="journeys-form__radio">
+                  <label for="radio-1" class="label-radio">Pink для iOS</label>
+                </div>
+                <div class="journeys-form__wrapper">
+                  <input type="radio" name="device" id="radio-2" class="journeys-form__radio">
+                  <label for="radio-2" class="label-radio">Pink на Android</label>
+                </div>
+                <div class="journeys-form__wrapper">
+                  <input type="radio" name="device" id="radio-3" class="journeys-form__radio">
+                  <label for="radio-3" class="label-radio">Windows Phone</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="container">
+            <fieldset class="form__section emotions-form">
+              <h3 class="form-title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+              <textarea name="emotions-message" placeholder="Можно прям в красках, не
+              стесняясь в выражениях"></textarea>
+            </fieldset>
           </div>
         </form>
     </section>

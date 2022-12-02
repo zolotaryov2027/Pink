@@ -50,26 +50,26 @@
         </h2>
       </div>
         <form action="#" class="form">
-          <div class="container">
+          <div class="container form__container">
             <fieldset class="form__section user-form">
-              <div class="user-form__wrapper">
-                <label for="user-form__surname" class="label-field">ФАМИЛИЯ:</label>
-                <input type="text" class="field-form" id="user-form__surname" placeholder="Укажите фамилию *">
+              <div class="form__field-wrapper">
+                <label for="user-form__surname" class="label-field form__label-field">ФАМИЛИЯ:</label>
+                <input type="text" class="field-form form__field" id="user-form__surname" placeholder="Укажите фамилию *">
               </div>
-              <div class="user-form__wrapper">
-                <label for="user-form__name" class="label-field">ИМЯ:</label>
-                <input type="text" class="field-form" id="user-form__name" placeholder="Введите ваше имя *">
+              <div class="form__field-wrapper">
+                <label for="user-form__name" class="label-field form__label-field">ИМЯ:</label>
+                <input type="text" class="field-form form__field" id="user-form__name" placeholder="Введите ваше имя *">
               </div>
-              <div class="user-form__wrapper">
-                <label for="user-form__patronymic" class="label-field">ОТЧЕСТВО:</label>
-                <input type="text" class="field-form" id="user-form__patronymic" placeholder="Ну и отчество тоже">
+              <div class="form__field-wrapper">
+                <label for="user-form__patronymic" class="label-field form__label-field">ОТЧЕСТВО:</label>
+                <input type="text" class="field-form form__field" id="user-form__patronymic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
           </div>
           <div class="form__wrapper">
-            <div class="container">
+            <div class="container form__container">
               <fieldset class="form__section achievements-form">
-                <h3 class="form-title">Ваши безбашенные достижения в путешествии</h3>
+                <legend class="title-form form__title">Ваши безбашенные достижения в путешествии</legend>
                 <div class="achievements-form__wrapper">
                   <input type="checkbox" name="shark" id="checkbox-1" class="achievements-form__checkbox">
                   <label for="checkbox-1" class="label-checkbox">Сделал селфи с акулой</label>
@@ -97,22 +97,22 @@
               </fieldset>
             </div>
           </div>
-          <div class="container">
+          <div class="container form__container">
             <fieldset class="form__section contacts-form">
-              <div class="contacts-form__wrapper">
-                <label for="contacts-form__telephone" class="label-field">НОМЕР ТЕЛЕФОНА</label>
-                <input type="text" class="field-form" id="contacts-form__telephone" placeholder="Номер, пожалуйста">
+              <div class="form__field-wrapper">
+                <label for="contacts-form__telephone" class="label-field form__label-field">НОМЕР ТЕЛЕФОНА</label>
+                <input type="text" class="field-form form__field" id="contacts-form__telephone" placeholder="Номер, пожалуйста">
               </div>
-              <div class="contacts-form__wrapper">
-                <label for="contacts-form__email" class="label-field">АДРЕС ПОЧТЫ</label>
-                <input type="text" class="field-form" id="contacts-form__email" placeholder="Введите почту *">
+              <div class="form__field-wrapper">
+                <label for="contacts-form__email" class="label-field form__label-field">АДРЕС ПОЧТЫ</label>
+                <input type="text" class="field-form form__field" id="contacts-form__email" placeholder="Введите почту *">
               </div>
             </fieldset>
           </div>
           <div class="form__wrapper">
-            <div class="container">
+            <div class="container form__container">
               <fieldset class="form__section journeys-form">
-                <h3 class="form-title">С каким приложением путешествовали?</h3>
+                <legend class="title-form form__title">С каким приложением путешествовали?</legend>
                 <div class="journeys-form__wrapper">
                   <input type="radio" name="device" id="radio-1" class="journeys-form__radio">
                   <label for="radio-1" class="label-radio">Pink для iOS</label>
@@ -128,12 +128,13 @@
               </fieldset>
             </div>
           </div>
-          <div class="container">
-            <fieldset class="form__section emotions-form">
-              <h3 class="form-title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
-              <textarea name="emotions-message" placeholder="Можно прям в красках, не
-              стесняясь в выражениях"></textarea>
+          <div class="container form__container_last">
+            <fieldset class="form__section">
+              <legend class="title-form form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <textarea name="emotions-message" placeholder="Можно прям в красках, не стесняясь в выражениях" class="message form__message"></textarea>
             </fieldset>
+            <button class="button-form form__button">Отправить форму</button>
+            <span class="required-fields form__required-fields"><span class="required-fields__snowflake">*</span> — обязательные поля</span>
           </div>
         </form>
     </section>

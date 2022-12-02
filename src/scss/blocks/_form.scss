@@ -1,12 +1,7 @@
-.form{
-  font-size: 18px;
-}
 
-.form-section{
-  border: none;
-}
 
-.label-field,.form-title{
+
+.label-field,.title-form{
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -14,4 +9,90 @@
   text-transform: uppercase;
 }
 
+.field-form{
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  padding: 15px 20px; 
+}
 
+.field-form::placeholder{
+  color: $ebony-color;
+}
+
+.button-form{
+  font-weight: 700;
+  font-size: 18px;
+  background: #2AAB6D;
+  border: 2px solid #2AAB6D;
+  border-radius: 1px;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.required-fields{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  &__snowflake{
+    color: $color-pink;
+  }
+}
+
+.message{
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  resize: none;
+  &::placeholder{
+    color: $ebony-color;
+  }
+}
+
+.form{
+  font-size: 18px;
+  &__container{
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+  &__wrapper{
+    background-color: $color-grey;
+  }
+  &__section{
+    border: none;
+    padding: 0;
+  }
+  &__title{
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__field-wrapper{
+    margin-bottom: 29px;
+  }
+  &__field{
+    display: block;
+    width: 100%;
+  }
+  &__label-field{
+    display: block;
+    margin-bottom: 17px;
+    padding-left: 15px;
+  }
+  &__container_last{
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  &__message{
+    width: 100%;
+    height: 197px;
+    padding: 22px 20px;
+  }
+  &__button{
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    margin: 52px auto 40px;
+    padding: 15px;
+  }
+}

@@ -10,7 +10,7 @@
 }
 
 .field-form{
-  border: 2px solid #E5E5E5;
+  border: 2px solid $color-grey-second;
   border-radius: 1px;
   padding: 15px 20px; 
 }
@@ -48,6 +48,57 @@
     color: $ebony-color;
   }
 }
+
+
+.label-checkbox{
+  display: flex;
+  align-items: center;
+  &::before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: $color-white;
+    border: 2px solid $color-grey-second;
+    border-radius: 1px;
+    margin-right: 22px;
+  }
+}
+
+.achievements-form__checkbox:checked + .label-checkbox::before{
+  background-image: url('../img/icons/checkbox.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.label-radio{
+  display: flex;
+  align-items: center;
+  &::before{
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background: $color-white;
+    border: 2px solid $color-grey-second;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+}
+
+.journeys-form__radio:checked + .label-radio::before{
+  background: radial-gradient(circle at center, $color-pink 23%, $color-white 27%);
+}
+
+.journeys-form__wrapper{
+  margin-bottom: 38px;
+}
+
+.journeys-form__wrapper:last-child{
+  margin-bottom: 0;
+}
+
+
 
 .form{
   font-size: 18px;
@@ -95,4 +146,13 @@
     margin: 52px auto 40px;
     padding: 15px;
   }
+}
+
+
+.achievements-form__wrapper{
+  margin-bottom: 40px;
+}
+
+.achievements-form__wrapper:last-child{
+  margin-bottom: 0;
 }

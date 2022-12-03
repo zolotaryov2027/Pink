@@ -45,26 +45,29 @@
       <div class="container"> 
         <h2 class="form-contest__slogan">
           Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000 
+          шанс выиграть<br> ценный приз — 1000 
           миль на вашу бонусную карту!
+          <span class="form-contest__appeal">Пожалуйста заполните форму ниже</span>
         </h2>
       </div>
         <form action="#" class="form">
-          <div class="container form__container">
-            <fieldset class="form__section user-form">
-              <div class="form__field-wrapper">
-                <label for="user-form__surname" class="label-field form__label-field">ФАМИЛИЯ:</label>
-                <input type="text" class="field-form form__field" id="user-form__surname" placeholder="Укажите фамилию *">
-              </div>
-              <div class="form__field-wrapper">
-                <label for="user-form__name" class="label-field form__label-field">ИМЯ:</label>
-                <input type="text" class="field-form form__field" id="user-form__name" placeholder="Введите ваше имя *">
-              </div>
-              <div class="form__field-wrapper">
-                <label for="user-form__patronymic" class="label-field form__label-field">ОТЧЕСТВО:</label>
-                <input type="text" class="field-form form__field" id="user-form__patronymic" placeholder="Ну и отчество тоже">
-              </div>
-            </fieldset>
+          <div class="form__wrapper">
+            <div class="container form__container">
+              <fieldset class="form__section user-form">
+                <div class="form__field-wrapper user-form__wrapper">
+                  <label for="user-form__surname" class="label-field form__label-field">ФАМИЛИЯ:</label>
+                  <input type="text" class="field-form form__field" id="user-form__surname" placeholder="Укажите фамилию *">
+                </div>
+                <div class="form__field-wrapper user-form__wrapper">
+                  <label for="user-form__name" class="label-field form__label-field">ИМЯ:</label>
+                  <input type="text" class="field-form form__field" id="user-form__name" placeholder="Введите ваше имя *">
+                </div>
+                <div class="form__field-wrapper user-form__wrapper">
+                  <label for="user-form__patronymic" class="label-field form__label-field">ОТЧЕСТВО:</label>
+                  <input type="text" class="field-form form__field" id="user-form__patronymic" placeholder="Ну и отчество тоже">
+                </div>
+              </fieldset>
+            </div>
           </div>
           <div class="form__wrapper">
             <div class="container form__container">
@@ -97,17 +100,23 @@
               </fieldset>
             </div>
           </div>
-          <div class="container form__container">
-            <fieldset class="form__section contacts-form">
-              <div class="form__field-wrapper">
-                <label for="contacts-form__telephone" class="label-field form__label-field">НОМЕР ТЕЛЕФОНА</label>
-                <input type="text" class="field-form form__field" id="contacts-form__telephone" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form__field-wrapper">
-                <label for="contacts-form__email" class="label-field form__label-field">АДРЕС ПОЧТЫ</label>
-                <input type="text" class="field-form form__field" id="contacts-form__email" placeholder="Введите почту *">
-              </div>
-            </fieldset>
+          <div class="form__wrapper">
+            <div class="container form__container">
+              <fieldset class="form__section contacts-form">
+                <div class="form__field-wrapper">
+                  <label for="contacts-form__telephone" class="label-field form__label-field">НОМЕР ТЕЛЕФОНА</label>
+                  <div class="contacts-form__input contacts-form__input_phone">
+                    <input type="text" class="field-form form__field" id="contacts-form__telephone" placeholder="Номер, пожалуйста">
+                  </div>
+                </div>
+                <div class="form__field-wrapper">
+                  <label for="contacts-form__email" class="label-field form__label-field">АДРЕС ПОЧТЫ</label>
+                  <div class="contacts-form__input contacts-form__input_message">
+                    <input type="text" class="field-form form__field" id="contacts-form__email" placeholder="Введите почту *">
+                  </div>
+                </div>
+              </fieldset>
+            </div>
           </div>
           <div class="form__wrapper">
             <div class="container form__container">
@@ -128,13 +137,17 @@
               </fieldset>
             </div>
           </div>
-          <div class="container form__container_last">
-            <fieldset class="form__section">
-              <legend class="title-form form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-              <textarea name="emotions-message" placeholder="Можно прям в красках, не стесняясь в выражениях" class="message form__message"></textarea>
-            </fieldset>
-            <button class="button-form form__button">Отправить форму</button>
-            <span class="required-fields form__required-fields"><span class="required-fields__snowflake">*</span> — обязательные поля</span>
+          <div class="form__wrapper">
+            <div class="container form__container_last">
+              <fieldset class="form__section">
+                <legend class="title-form form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+                <textarea name="emotions-message" placeholder="Можно прям в красках, не стесняясь в выражениях" class="message form__message"></textarea>
+              </fieldset>
+              <div class="form__button-wrapper">
+                <button class="button-form form__button">Отправить форму</button>
+                <span class="required-fields form__required-fields"><span class="required-fields__snowflake">*</span> — обязательные поля</span>
+              </div>
+            </div>
           </div>
         </form>
     </section>

@@ -11,6 +11,15 @@ html,body{
 }
 
 
+
+.main-content{
+  flex: 1 1 auto;
+}
+
+.footer{
+  flex: 0 1 auto;
+}
+
 .container{
   margin: 0 auto;
   padding: 0 20px;

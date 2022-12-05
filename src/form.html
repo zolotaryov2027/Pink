@@ -40,6 +40,107 @@
         <h2 class="slogan intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </section>
+    <section class="form-contest">
+      <h3 class="visually-hidden">Форма для конкурса</h3>
+      <div class="container">
+        <h2 class="form__slogan">
+          Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000 
+          миль на вашу бонусную карту!
+        </h2>
+      </div>
+      <form action="#" class="form">
+        <section class="form__section user">
+          <div class="container">
+            <div class="form__block-field">
+              <label for="surname" class="label-field">ФАМИЛИЯ:</label>
+              <input type="text" class="field" name="surname" id="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form__block-field">
+              <label for="name" class="label-field">ИМЯ:</label>
+              <input type="text" class="field" name="name" id="name" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form__block-field">
+              <label for="patronymic" class="label-field">ОТЧЕСТВО:</label>
+              <input type="text" class="field" name="name" id="patronymic" placeholder="Укажите фамилию *">
+            </div>
+          </div>
+        </section>
+        <section class="form__section achievements">
+          <div class="container">
+            <fieldset class="form__section-block">
+              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden check" name="selfie" id="selfie">
+                <label for="selfie" class="label-checkbox">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden check" name="burned" id="burned">
+                <label for="burned" class="label-checkbox">Обгорел на пляже</label>
+              </div>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden check" name="norris" id="norris">
+                <label for="norris" class="label-checkbox">Видел Чака Норриса</label>
+              </div>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden check" name="souvenir" id="souvenir">
+                <label for="souvenir" class="label-checkbox">Накупил сувениров</label>
+              </div>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden check" name="tower" id="tower">
+                <label for="tower" class="label-checkbox">Удержал башню</label>
+              </div>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden check" name="hotel" id="hotel">
+                <label for="hotel" class="label-checkbox">Разгромил отель</label>
+              </div>
+            </fieldset>
+          </div>
+        </section>
+        <section class="form__section contact">
+          <div class="container">
+            <fieldset class="form__section-block">
+              <legend class="form__title">контактная информация</legend>
+              <div class="form__block-field">
+                <label for="telephone" class="label-field">НОМЕР ТЕЛЕФОНА</label>
+                <input type="tel" class="field" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__block-field">
+                <label for="email" class="label-field">АДРЕС ПОЧТЫ</label>
+                <input type="email" class="field" name="email" id="email" placeholder="Введите почту *">
+              </div>
+            </fieldset>
+          </div>
+        </section>
+        <section class="form__section application">
+          <div class="container">
+            <fieldset class="form__section-block">
+              <legend class="form__title">С каким приложением путешествовали?</legend>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden radio" name="ios" id="ios">
+                <label for="ios" class="label-checkbox">Pink для iOS</label>
+              </div>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden radio" name="android" id="android">
+                <label for="android" class="label-checkbox">Pink на Android</label>
+              </div>
+              <div class="form__block-checkbox">
+                <input type="checkbox" class="visually-hidden radio" name="windows" id="windows">
+                <label for="windows" class="label-checkbox">Windows Phone</label>
+              </div>
+            </fieldset>
+          </div>
+        </section>
+        <section class="form__section describe">
+          <div class="container">
+            <fieldset class="form__section-block">
+              <legend class="form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <textarea name="describe__message" class="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </div>
+        </section>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="container footer__container">

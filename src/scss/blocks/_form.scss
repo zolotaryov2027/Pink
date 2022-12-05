@@ -1,0 +1,50 @@
+.form-contest{
+  padding: 40px 0 10px;
+}
+
+.form__section-block{
+  padding: 0;
+  border: none;
+}
+
+.label-field,
+.form__title{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $color-pink;
+  display: block;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.field{
+  font-size: 18px;
+  line-height: 30px;
+  padding: 8px 20px;
+  border: 2px solid $color-grey-second;
+  border-radius: 1px;
+  width: 100%;
+}
+
+.achievements,
+.application{
+  background-color: $color-grey;
+}
+
+.form{
+  &__slogan{
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__block-field{
+    margin-bottom: 15px;
+  }
+  &__title{
+    text-align: center;
+  }
+}

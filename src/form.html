@@ -43,14 +43,15 @@
     <section class="form-contest">
       <h3 class="visually-hidden">Форма для конкурса</h3>
       <div class="container">
-        <h2 class="form__slogan">
-          Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000 
-          миль на вашу бонусную карту!
+        <h2 class="form__slogan slogan-form">
+          Поделитесь своей историей и получите шанс выиграть
+          ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="slogan-form__line">Пожалуйста, заполните форму ниже:</span>
         </h2>
       </div>
       <form action="#" class="form">
-        <section class="form__section user">
+        <section class="section-form form__user">
+          <h2 class="visually-hidden">Введиете ваши ФИО</h2>
           <div class="container">
             <div class="form__block-field">
               <label for="surname" class="label-field">ФАМИЛИЯ:</label>
@@ -66,12 +67,13 @@
             </div>
           </div>
         </section>
-        <section class="form__section achievements">
+        <section class="section-form form__achievements">
+          <h2 class="visually-hidden">Ваши достижения</h2>
           <div class="container">
             <fieldset class="form__section-block">
-              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="title-form form__title">Ваши безбашенные достижения в путешествии</legend>
               <div class="form__block-checkbox">
-                <input type="checkbox" class="visually-hidden check" name="selfie" id="selfie">
+                <input type="checkbox" class="visually-hidden check" name="selfie" id="selfie" checked>
                 <label for="selfie" class="label-checkbox">Сделал селфи с акулой</label>
               </div>
               <div class="form__block-checkbox">
@@ -97,10 +99,11 @@
             </fieldset>
           </div>
         </section>
-        <section class="form__section contact">
+        <section class="section-form form__contacts">
+          <h2 class="visually-hidden">Ваши контакты</h2>
           <div class="container">
-            <fieldset class="form__section-block">
-              <legend class="form__title">контактная информация</legend>
+             <fieldset class="form__section-block">
+              <legend class="title-form form__title form__title-contacts">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
               <div class="form__block-field">
                 <label for="telephone" class="label-field">НОМЕР ТЕЛЕФОНА</label>
                 <input type="tel" class="field" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
@@ -109,36 +112,44 @@
                 <label for="email" class="label-field">АДРЕС ПОЧТЫ</label>
                 <input type="email" class="field" name="email" id="email" placeholder="Введите почту *">
               </div>
+             </fieldset>
+          </div>
+        </section>
+        <section class="section-form form__application">
+          <h2 class="visually-hidden">Ваш девайс</h2>
+          <div class="container">
+            <fieldset class="form__section-block">
+              <legend class="title-form form__title">С каким приложением путешествовали?</legend>
+              <div class="form__block-radio">
+                <input type="radio" class="visually-hidden radio" name="device" id="ios" checked>
+                <label for="ios" class="label-radio">Pink для iOS</label>
+              </div>
+              <div class="form__block-radio">
+                <input type="radio" class="visually-hidden radio" name="device" id="android">
+                <label for="android" class="label-radio">Pink на Android</label>
+              </div>
+              <div class="form__block-radio">
+                <input type="radio" class="visually-hidden radio" name="device" id="windows">
+                <label for="windows" class="label-radio">Windows Phone</label>
+              </div>
             </fieldset>
           </div>
         </section>
-        <section class="form__section application">
+        <section class="section-form form__describe">
+          <h2 class="visually-hidden">Ваши впечатления</h2>
           <div class="container">
             <fieldset class="form__section-block">
-              <legend class="form__title">С каким приложением путешествовали?</legend>
-              <div class="form__block-checkbox">
-                <input type="checkbox" class="visually-hidden radio" name="ios" id="ios">
-                <label for="ios" class="label-checkbox">Pink для iOS</label>
-              </div>
-              <div class="form__block-checkbox">
-                <input type="checkbox" class="visually-hidden radio" name="android" id="android">
-                <label for="android" class="label-checkbox">Pink на Android</label>
-              </div>
-              <div class="form__block-checkbox">
-                <input type="checkbox" class="visually-hidden radio" name="windows" id="windows">
-                <label for="windows" class="label-checkbox">Windows Phone</label>
-              </div>
-            </fieldset>
-          </div>
-        </section>
-        <section class="form__section describe">
-          <div class="container">
-            <fieldset class="form__section-block">
-              <legend class="form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <legend class="title-form form__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
               <textarea name="describe__message" class="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
         </section>
+        <div class="section-form form__button-wrapper">
+          <div class="container">
+            <button class="button-form form__button">Отправить форму</button>
+            <span class="form__warning">— обязательные поля</span>
+          </div>
+        </div>
       </form>
     </section>
   </main>

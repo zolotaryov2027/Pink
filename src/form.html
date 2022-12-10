@@ -101,22 +101,22 @@
             </fieldset>
           </div>
         </section>
-        <section class="section-form form__contacts contacts">
+        <section class="section-form form__contacts">
           <h2 class="visually-hidden">Ваши контакты</h2>
           <div class="container">
              <fieldset class="form__section-block">
               <legend class="title-form form__title form__title-contacts">контактная информация</legend>
-              <div class="contacts__wrapper">
+              <div class="form__contacts-wrapper">
                 <div class="form__block-field">
                   <label for="telephone" class="label-field">НОМЕР ТЕЛЕФОНА</label>
                   <div class="field-wrapper field-wrapper_phone">
-                    <input type="tel" class="field" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+                    <input type="tel" class="field" name="telephone" id="telephone"  maxlength="12" placeholder="Номер, пожалуйста">
                   </div>
                 </div>
                 <div class="form__block-field">
                   <label for="email" class="label-field">АДРЕС ПОЧТЫ</label>
                   <div class="field-wrapper field-wrapper_mail">
-                    <input type="email" class="field" name="email" id="email" placeholder="Введите почту *">
+                    <input type="email" class="field" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder="Введите почту *">
                   </div>
                 </div>
               </div>
@@ -193,6 +193,29 @@
       </a>
     </div>
   </footer>
+  <div class="form-modal form-modal--error">
+    <h3 class="form-modal__title">Что-то пошло не так!</h3>
+    <p class="form-modal__text">
+      Проверьте поля, выделенные красным,
+      скорее всего вы забыли их заполнить
+    </p>
+    <div class="form-modal__bottom">
+      <button class="form-modal__button">ОК</button>
+    </div>
+  </div>
+  <div class="form-modal form-modal--valid">
+    <h3 class="form-modal__title">Ваша заявка отправлена</h3>
+    <p class="form-modal__text">
+      Спасибо за ваше участие, ваша заявка
+      уже поступила к нам. В ближайшее
+      время мы рассмотрим ее и
+      оповестим вас.
+    </p>
+    <div class="form-modal__bottom">
+      <button class="form-modal__button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </div>
  </div>
+ <script src="js/main.js"></script>
 </body>
 </html>

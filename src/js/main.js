@@ -150,8 +150,10 @@ const handleTouchMove = (event) => {
   y1 = null;
 }
 
-priceTabel.addEventListener('touchstart', handleTouchStart, false);
-priceTabel.addEventListener('touchmove', handleTouchMove, false);
+if(priceTabel){
+  priceTabel.addEventListener('touchstart', handleTouchStart, false);
+  priceTabel.addEventListener('touchmove', handleTouchMove, false);
+}
 
 
 // Map
@@ -186,4 +188,83 @@ function init() {
 }
 
 
-ymaps.ready(init);
+if(document.querySelector('.map')){
+  ymaps.ready(init);
+}
+
+
+
+
+
+// Валидация
+
+const form = document.querySelector('.form');
+
+// Открывает модальное окно
+function modalShow(modal){
+  modal.classList.add('form-modal--active');
+}
+// Закрывает модальное окно
+function modalClose(modal){
+  modal.classList.remove('form-modal--active');
+}
+
+// Валидация телефона
+function validatePhone(phone){
+  let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+  return regex.test(phone);
+ }
+
+  
+// Функция валидации формы
+function validation(form){
+  let result = true;
+  const formField = form.querySelectorAll('.field');
+  const formFieldPhone = form.querySelector('input[type="tel"]');
+  let phone = formFieldPhone.value;
+  for(let field of formField){
+    if(field.value === ''){
+      result = false;
+      field.classList.add('field--error');
+    }
+    field.addEventListener('blur', function(){
+      field.classList.remove('field--error');
+    })
+  }
+  if(!validatePhone(phone)){
+    result = false;
+    formFieldPhone.classList.add('field--error');
+  }
+  return result;
+}
+
+
+// Отправка формы
+form.addEventListener('submit', function(event){
+  const formModalValid = document.querySelector('.form-modal--valid');
+  const formModalError = document.querySelector('.form-modal--error');
+  const formModalButton = document.querySelectorAll('.form-modal__button');
+  event.preventDefault();
+  if(validation(this) == true){
+    formModalValid.scrollIntoView({block: "center", behavior: "smooth"});
+    modalShow(formModalValid);
+  }else{
+    formModalError.scrollIntoView({block: "center", behavior: "smooth"});
+    modalShow(formModalError);
+  }
+
+  // Закрыть модальные окна
+
+for(let elem of formModalButton){
+  elem.addEventListener('click', function(evt){
+    evt.preventDefault();
+    modalClose(formModalError);
+    modalClose(formModalValid);
+  })
+}
+})
+
+
+
+
+
